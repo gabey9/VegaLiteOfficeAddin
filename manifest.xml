@@ -13,10 +13,6 @@
   <Description DefaultValue="Crypto Streaming Functions."/>
   <SupportUrl DefaultValue="https://www.crypto.com/help"/>
 
-  <AppDomains>
-    <AppDomain>https://gabey9.github.io/VegaLiteOfficeAddin</AppDomain>
-  </AppDomains>
-
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
@@ -30,9 +26,6 @@
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" Version="1.0">
     <Hosts>
       <Host xsi:type="Workbook">
-        <Runtimes>
-          <Runtime resid="Taskpane.Url" lifetime="long"/>
-        </Runtimes>
         <AllFormFactors>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
