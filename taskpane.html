@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Excel Vega Add-in</title>
+
+  <!-- Vega libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <script src="taskpane.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 10px; }
+    #chart { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Excel Vega Add-in</h2>
+  <label for="chartType">Chart type: </label>
+  <select id="chartType" onchange="drawChart()">
+    <option value="point">Scatter</option>
+    <option value="bar">Bar</option>
+    <option value="line">Line</option>
+  </select>
+  <div id="chart"></div>
+</body>
+</html>
