@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+
   <Id>dfec3118-940b-43d3-b831-4daf9208f5ba</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Crypto</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Crypto Office Add-in"/>
   <Description DefaultValue="Crypto Streaming Functions."/>
-  <IconUrl DefaultValue="https://gabey9.github.io/VegaLiteOfficeAddin/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://gabey9.github.io/VegaLiteOfficeAddin/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.crypto.com/help"/>
+
   <AppDomains>
     <AppDomain>https://gabey9.github.io/VegaLiteOfficeAddin</AppDomain>
   </AppDomains>
+
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
-  <Requirements>
-    <Sets DefaultMinVersion="1.1">
-      <Set Name="SharedRuntime" MinVersion="1.1"/>
-    </Sets>
-  </Requirements>
+
   <DefaultSettings>
     <SourceLocation DefaultValue="https://gabey9.github.io/VegaLiteOfficeAddin/taskpane.html"/>
   </DefaultSettings>
+
   <Permissions>ReadWriteDocument</Permissions>
-  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" Version="1.0">
     <Hosts>
       <Host xsi:type="Workbook">
         <Runtimes>
@@ -55,6 +58,7 @@
         </AllFormFactors>
       </Host>
     </Hosts>
+
     <Resources>
       <bt:Images>
         <bt:Image id="Icon.16" DefaultValue="https://gabey9.github.io/VegaLiteOfficeAddin/assets/icon-16.png"/>
